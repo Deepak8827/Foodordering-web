@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* css varibale*/
+:root{
+    --navbar-height:59px;
+}
+/* navigation Bar*/
+ #navbar{
+
+     display: flex;
+     align-items: center;
+     position: sticky;
+    
+     font-family: 'Baloo Thambi 2', cursive;
+ }
+ /* navigation Bar:logo and Image*/
+  .logo{
+      margin:10px 32px;
+  }
+  .logo img{
+    margin: 2px 19px;
+    height: 50px;
+    padding: 1px 15px;
+    cursor: pointer;
+  }
+
+/* navigation Bar:logo and Image*/
+#navbar ul{
+    display: flex;
+}
+  #navbar ul li{
+      list-style: none;
+    
+  }
+  /* navbar ke before property */
+#navbar::before{
+    content:"";
+    background-color:black;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+    /* navbar ki position bhi relative kro uper jake */
+}
+
+  #navbar ul li a{
+      display: block;
+    text-decoration: none;
+    padding: 28px 43px;
+    color: white;
+  }
+  #navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+ /* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 554px;
+}
+ /* home ke before property */
+ #home::before{
+    content:"";
+    background:url("../img/b1.jpg")no-repeat center center/cover;
+    position:absolute;
+    height:642px;
+    width:100%;
+    top:0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.89;
+    /* section ki height set kro uper jake */
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+/*services section*/
+#services{
+    display:flex;
+    margin:34px;
+}
+#services .box{
+    background-color: #f2f2f2;
+    padding: 34px;
+    margin: -42px 10px;
+    margin-bottom: 1px;
+    border: 2px solid brown;
+    border-radius: 33px;
+    
+}
+#services .box img{
+    display: block;
+    height: 90px;
+    margin: 6px auto;
+    /*uper ja home ki height badahao*/
+}
+#services .box p{
+    font-family: 'Baloo Thambi 2', cursive;    
+}
+
+/*Client - section*/ 
+#client-section{
+    position: relative;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img{
+    height: 160px;
+}
+#clients-item{
+    padding: 34px;
+    
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url("../img/b4.jpg")no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.4;
+}
+/*contact  section*/
+#contact{
+    font-family: 'Baloo Thambi 2', cursive;   
+    position: relative;
+}
+#contact::before{
+    position: absolute;
+    content: "";
+    background: url(../img/b11.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 580px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+     padding:18px;
+    border: 2px solid gray;
+    border-radius:30px;
+    font-size: 15px;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    margin: 2px 3px;
+}
+#contact-box form{
+    width: 47%;
+    margin: -69px 2px;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
+
+/*utility section*/
+    .h-primary{
+        font-size:1.8rem;
+        padding:12px;
+        font-family: 'Baloo Thambi 2', cursive;
+    }
+    .btn{
+        color: white;
+        background-color: brown;
+        padding: 6px 20px;
+        margin: 14px;
+        border: 2px solid white;
+        border-radius: 14px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .center{
+        text-align: center;
+    }
+    .h-secondary{
+        font-size:0.8rem;
+        padding:12px;
+        font-family: 'Baloo Thambi 2', cursive;
+    }
